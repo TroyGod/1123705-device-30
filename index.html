@@ -2,30 +2,33 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
   <header class="main-header">
     <a>
-      <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-      <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип интернет-магазина Девайс">
+      <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     </a>
+
+    <form action="" method="GET">
+      <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+      <button type="button">Найти</button>
+    </form>
+
+    <ul>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+
     <nav>
-      <form action="" method="POST">
-        <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
-        <button type="button">Найти</button>
-      </form>
-
-      <ul>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-
       <ul>
         <li>
-          Каталог товаров
+          <a href="#">Каталог товаров</a>
           <ul>
             <li><a href="#">Виртуальная реальность</a></li>
             <li><a href="catalog.html">Моноподы для селфи</a></li>
@@ -53,8 +56,7 @@
       <ul>
         <li>
           <div>
-            <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-            <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Палка для селфи">
+            <img src="img/slider-selfie-stick.png" width="384" height="486" alt="Самая длинная плака для селфи в магазине">
           </div>
           <div>
             <p>Делай селфи, как Бен Стиллер!</p>
@@ -73,14 +75,46 @@
                 <td>Карбан</td>
               </tr>
             </table>
-            <!-- Пагинация -->
-            <ul>
-              <li><button type="button">1</button></li>
-              <li><button type="button">2</button></li>
-              <li><button type="button">3</button></li>
-            </ul>
           </div>
         </li>
+        <li>
+          <div>
+            <img src="img/slider-fitbit.png" width="384" height="486" alt="Фитнес-браслет для похудения">
+          </div>
+          <div>
+            <p>Худеем правильно!</p>
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+            <a href="#">Подробнее</a>
+            <p>48 часов <span>без подзарядки</span></p>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="img/slider-quadcopter.png" width="526" height="334" alt="Квадртокоптер, оснащенный лазером">
+          </div>
+          <div>
+            <p>Порхает как бабочка, жалит как пчела!</p>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <a href="#">Подробнее</a>
+            <table>
+              <tr>
+                <th>Дальность полета</th>
+                <th>Радиус поражения</th>
+              </tr>
+              <tr>
+                <td>800 м</td>
+                <td>50 м</td>
+              </tr>
+            </table>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Пагинация -->
+      <ul>
+        <li><button type="button">1</button></li>
+        <li><button type="button">2</button></li>
+        <li><button type="button">3</button></li>
       </ul>
     </section>
 
@@ -88,28 +122,22 @@
       <h2>Каталог товаров</h2>
       <ul>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
           <a href="#">Виртуальная реальность</a>
         </li>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
           <a href="catalog.html">Моноподы для селфи</a>
         </li>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
           <a href="#">Экшн камеры</a>
         </li>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
           <a href="#">Фитнес-браслеты</a>
         </li>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
-          <a>Умные часы</a>
+          <a href="#">Умные часы</a>
         </li>
         <li>
-          <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
-          <a>Квадртокоптеры</a>
+          <a href="#">Квадртокоптеры</a>
         </li>
       </ul>
     </section>
@@ -135,26 +163,35 @@
             подъезду совершенно бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.</p>
         </li>
-        <li></li>
-        <li></li>
+        <li>
+          <h3>Гарантия</h3>
+          <p>Если из-за возгорания купленного у нас товара у вас сгорит дом —
+            не переживайте, мы выдадим вам новый.
+            Товар, не дом, конечно же.</p>
+        </li>
+        <li>
+          <h3>Кредит</h3>
+          <p>Залезть в долговую яму стало проще! Кредитные консультанты
+            подберут для вас наиболее выгодные
+            условия кредита. Выгодные для нашего банка, разумеется.</p>
+        </li>
       </ul>
     </section>
 
     <section>
       <h2>Производители товаров</h2>
       <ul>
-        <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
         <li>
-          <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип компании dji">
+          <a><img src="img/dji-company-logo.svg" width="260" height="100" alt="Логотип компании dji"></a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип компании SP Gadgets">
+          <a><img src="img/sp-gadgets-logo.svg" width="260" height="100" alt="Логотип компании SP Gadgets"></a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип компании GoPro">
+          <a><img src="img/go-pro-company-logo.svg" width="260" height="100" alt="Логотип компании GoPro"></a>
         </li>
         <li>
-          <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип компании Vive">
+          <a><img src="img/vive-company-logo.svg" width="260" height="100" alt="Логотип компании Vive"></a>
         </li>
       </ul>
     </section>
@@ -167,7 +204,6 @@
 
       <p>Мы можем доставить ваш товар в самые отдаленные точки
         России! DEVICE работает со многими транспортными компаниями:</p>
-
       <ul>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
@@ -183,7 +219,7 @@
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
         проверить работоспособность покупки. Всякое бывает.</p>
 
-      <!-- Карту вставить как картинку и обернуть в ссылку -->
+      <img src="img/map.png" width="560" height="222" alt="Карта с точкой расположения магазина">
 
       <a href="#">Напишите нам</a>
     </section>
@@ -192,7 +228,7 @@
   <footer class="main-footer">
     <div>
       <a>
-        <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип интернет-магазина Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </a>
 
       <ul>
@@ -228,8 +264,7 @@
       </ul>
 
       <a href="https://htmlacademy.ru" target="_blank">
-        <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
-        <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип HTML Academy">
+        <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>
@@ -237,21 +272,23 @@
   <section>
     <h2>Напишите нам</h2>
     <form action="" method="POST">
-      <p>
-        <label for="form-customers-fullname">Ваше имя:</label>
-        <input type="text" name="customers-fullname" id="form-customers-fullname" placeholder="Имя Фамилия">
-      </p>
-      <p>
-        <label for="form-customers-email">Ваш e-mail:</label>
-        <input type="email" name="customers-email" id="form-customers-email" placeholder="email@example.com">
-      </p>
-      <p>
-        <label for="form-customers-email-text">Текст письма:</label>
-        <textarea name="customers-email-text" id="form-customers-email-text" placeholder="В свободной форме"></textarea>
-      </p>
+      <ul>
+        <li>
+          <label for="form-customers-fullname">Ваше имя:</label>
+          <input type="text" name="customers-fullname" id="form-customers-fullname" placeholder="Имя Фамилия">
+        </li>
+        <li>
+          <label for="form-customers-email">Ваш e-mail:</label>
+          <input type="email" name="customers-email" id="form-customers-email" placeholder="email@example.com">
+        </li>
+        <li>
+          <label for="form-customers-email-text">Текст письма:</label>
+          <textarea name="customers-email-text" id="form-customers-email-text" placeholder="В свободной форме"></textarea>
+        </li>
+      </ul>
       <button type="submit">Отправить</button>
+      <button type="reset">Закрыть</button>
     </form>
-    <button type="button">Закрыть</button>
   </section>
 
   <section>

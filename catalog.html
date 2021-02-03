@@ -2,33 +2,36 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
   <header class="main-header">
     <a>
-      <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-      <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип интернет-магазина Девайс">
+      <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     </a>
+
+    <form action="" method="GET">
+      <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
+      <button type="button">Найти</button>
+    </form>
+
+    <ul>
+      <li><a href="#">Войти</a></li>
+      <li><a href="#">Сравнить</a></li>
+      <li><a href="#">Корзина</a></li>
+    </ul>
+
     <nav>
-      <form action="" method="POST">
-        <input type="search" placeholder="Поиск по сайту">
-        <button type="button">Найти</button>
-      </form>
-
-      <ul>
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Сравнить</a></li>
-        <li><a href="#">Корзина</a></li>
-      </ul>
-
       <ul>
         <li>
-          Каталог товаров
+          <a href="#">Каталог товаров</a>
           <ul>
             <li><a href="#">Виртуальная реальность</a></li>
-            <li><a href="#">Моноподы для селфи</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
             <li><a href="#">Экшн-камеры</a></li>
             <li><a href="#">Фитнес-браслеты</a></li>
             <li><a href="#">Умные часы</a></li>
@@ -124,8 +127,7 @@
         <li>
           <h3>Любительская селфи-палка</h3>
           <p>
-            <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-            <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Любительская селфи-палка">
+            <img src="img/amateur-selfie-stick.png" width="360" height="380" alt="Любительская селфи-палка">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </p>
@@ -134,8 +136,7 @@
         <li>
           <h3>Профессиональная селфи-палка</h3>
           <p>
-            <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-            <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Профессиональная селфи-палка">
+            <img src="img/pro-selfie-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </p>
@@ -144,8 +145,7 @@
         <li>
           <h3>Непотопляемая селфи-палка</h3>
           <p>
-            <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-            <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Непотопляемая селфи-палка">
+            <img src="img/water-proof-selfie-stick.png" width="360" height="380" alt="Непотопляемая селфи-палка">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </p>
@@ -154,17 +154,17 @@
         <li>
           <h3>Селфи-палка «Следуй за мной»</h3>
           <p>
-            <!-- Экспортировать логотип из макета и добавить ширину и высоту -->
-            <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Селфи-палка «Следуй за мной»">
+            <img src="img/follow-me-selfie-stick.png" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
             <button type="button">В корзину</button>
             <button type="button">Добавить к сравнению</button>
           </p>
           <p>1 900 руб.</p>
         </li>
       </ul>
+      <!-- Пагинация -->
       <ul>
         <li>
-          <button type="button">Назад</button>
+          <a href="#">Назад</a>>
         </li>
         <li>
           <a>1</a>
@@ -176,7 +176,7 @@
           <a href="#">3</a>
         </li>
         <li>
-          <button type="button">Вперед</button>
+          <a href="#">Вперед</a>
         </li>
       </ul>
     </section>
@@ -184,7 +184,7 @@
   <footer class="main-footer">
     <div>
       <a>
-        <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип интернет-магазина Девайс">
+        <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
       </a>
 
       <ul>
@@ -220,8 +220,7 @@
       </ul>
 
       <a href="https://htmlacademy.ru" target="_blank">
-        <!-- Экспортировать изображение товара из макета и добавить ширину и высоту -->
-        <img src="https://via.placeholder.com/150x100" width="150" height="150" alt="Логотип HTML Academy">
+        <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
       </a>
     </div>
   </footer>
