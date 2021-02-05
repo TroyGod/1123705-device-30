@@ -1,0 +1,248 @@
+/* Variables */
+
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+
+  --special-yellow-dark: #f0c52e;
+  --special-yellow-half-light: #f7e296;
+  --special-green: #91c92f;
+
+  --status-pink: #f6dada;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 300;
+  font-style: normal;
+  src:
+      url("../fonts/gilroylight.woff2") format("woff2"),
+      url("../fonts/gilroylight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-style: normal;
+  src:
+      url("../fonts/gilroyextrabold.woff2") format("woff2"),
+      url("../fonts/gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src:
+      url("../fonts/opensanslight.woff2") format("woff2"),
+      url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src:
+      url("../fonts/opensans.woff2") format("woff2"),
+      url("../fonts/opensans.woff") format("woff");
+}
+
+/* Global */
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+  color: var(--basic-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-style: 15px;
+  line-height: 20px;
+  color: var(--basic-black)
+}
+
+.main-navigation-wrapper {
+  background-color: var(--special-yellow-half-light);
+}
+
+.user-navigation,
+.site-navigation,
+.site-navigation-catalog {
+  list-style: none;
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.site-navigation a:hover,
+.site-navigation a:focus {
+  opacity: 0.6;
+}
+
+.user-navigation a:active,
+.site-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+/* Popular Products */
+
+.popular-products {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.popular-product-slogan {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  font-weight: 800;
+}
+
+.popular-product-feature {
+  font-family: "Gilroy", Arial, sans-serif;
+}
+
+.popular-product-feature th {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.popular-product-feature td {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.popular-products-pagination {
+  list-style: none;
+}
+
+/* Button */
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+/* Catalog */
+
+.catalog {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: var(--basic-black);
+}
+
+/* Features */
+
+.features {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  color: var(--basic-black);
+}
+
+.features-list,
+.features-description-list {
+  list-style: none;
+}
+
+.feature-description-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+}
+
+/* Manufactures */
+
+.products-manufactures-list {
+  list-style: none;
+}
+
+/* Index Column*/
+
+.index-column h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 58px;
+  letter-spacing: 0.2em;
+}
+
+/* About us */
+
+.about-us {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.partners-list {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 800;
+}
+
+/* Footer */
+
+.main-footer {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+.footer-user-navigation {
+  list-style: none;
+}
+
+.footer-user-navigation a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
