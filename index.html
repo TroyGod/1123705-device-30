@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="favicon.ico">
@@ -8,25 +8,26 @@
   <link rel="stylesheet" href="css/normalize.css">
 </head>
 
-<body>
+<body class="page-body">
   <header class="main-header">
-    <a>
+
+    <a class="main-header-logo">
       <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина Девайс">
     </a>
 
-    <form action="" method="GET">
+    <form class="search-form" action="" method="GET">
       <input type="search" name="search" id="search-field" placeholder="Поиск по сайту">
       <button type="button">Найти</button>
     </form>
 
-    <ul>
+    <ul class="">
       <li><a href="#">Войти</a></li>
       <li><a href="#">Сравнить</a></li>
       <li><a href="#">Корзина</a></li>
     </ul>
 
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li>
           <a href="#">Каталог товаров</a>
           <ul>
@@ -40,7 +41,7 @@
         </li>
       </ul>
 
-      <ul>
+      <ul class="site-navigation">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
@@ -48,10 +49,10 @@
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1>Интернет-магазин Девайс</h1>
 
-    <section>
+    <section class="">
       <h2>Популярные товары</h2>
       <ul>
         <li>
@@ -62,7 +63,7 @@
             <p>Делай селфи, как Бен Стиллер!</p>
             <p>Самая длинная палка для селфи доступна в нашем магазине.
               Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Длина палки</th>
@@ -84,7 +85,7 @@
           <div>
             <p>Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <p>48 часов <span>без подзарядки</span></p>
           </div>
         </li>
@@ -95,7 +96,7 @@
           <div>
             <p>Порхает как бабочка, жалит как пчела!</p>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <table>
               <tr>
                 <th>Дальность полета</th>
@@ -110,12 +111,11 @@
         </li>
       </ul>
 
-
       <!-- Пагинация -->
       <ul>
-        <li><button type="button">1</button></li>
-        <li><button type="button">2</button></li>
-        <li><button type="button">3</button></li>
+        <li><button class="slider-button slider-button-1" type="button">1</button></li>
+        <li><button class="slider-button slider-button-2" type="button">2</button></li>
+        <li><button class="slider-button slider-button-3" type="button">3</button></li>
       </ul>
     </section>
 
@@ -143,17 +143,18 @@
       </ul>
     </section>
 
-    <section>
+    <section class="features">
       <h2>Преимущества</h2>
-      <ul>
-        <li>
-          <button type="button">Доставка</button>
+
+      <ul class="features-list">
+        <li class="feature-item">
+          <button class="button features-button" type="button">Доставка</button>
         </li>
-        <li>
-          <button type="button">Гарантия</button>
+        <li class="feature-item">
+          <button class="button features-button" type="button">Гарантия</button>
         </li>
-        <li>
-          <button type="button">Кредит</button>
+        <li class="feature-item">
+          <button class="button features-button" type="button">Кредит</button>
         </li>
       </ul>
 
@@ -211,10 +212,10 @@
         <li>ЖелДорЭкспедиция</li>
       </ul>
 
-      <a href="#">Подробнее о нас</a>
+      <a class="button" href="#">Подробнее о нас</a>
     </section>
 
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
 
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
@@ -222,7 +223,7 @@
 
       <img src="img/map.png" width="560" height="222" alt="Карта с точкой расположения магазина">
 
-      <a href="#">Напишите нам</a>
+      <a class="button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -251,16 +252,16 @@
       <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a></p>
     </div>
 
-    <div>
+    <div class="footer-social">
       <ul>
         <li>
-          <a href="#">Фейсбук</a>
+          <a class="social-button" href="#">Фейсбук</a>
         </li>
         <li>
-          <a href="#">Инстаграм</a>
+          <a class="social-button" href="#">Инстаграм</a>
         </li>
         <li>
-          <a href="#">Твиттер</a>
+          <a class="social-button" href="#">Твиттер</a>
         </li>
       </ul>
 
@@ -270,9 +271,9 @@
     </div>
   </footer>
 
-  <section>
+  <section class="modal">
     <h2>Напишите нам</h2>
-    <form action="" method="POST">
+    <form class="contact-form" action="" method="POST">
       <ul>
         <li>
           <label for="form-customers-fullname">Ваше имя:</label>
@@ -287,15 +288,15 @@
           <textarea name="customers-email-text" id="form-customers-email-text" placeholder="В свободной форме"></textarea>
         </li>
       </ul>
-      <button type="submit">Отправить</button>
-      <button type="reset">Закрыть</button>
+      <button class="button" type="submit">Отправить</button>
+      <button class="modal-close" type="reset">Закрыть</button>
     </form>
   </section>
 
-  <section>
+  <section class="modal modal-map">
     <h2>Как до нас добраться</h2>
     <!-- Здесь будет карта -->
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button">Закрыть</button>
   </section>
 </body>
 </html>
