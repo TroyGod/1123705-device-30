@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <link rel="icon" href="favicon.ico">
@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-body">
+<body>
   <header class="main-header">
 
     <a class="main-header-logo">
@@ -17,39 +17,39 @@
     </a>
 
     <nav class="main-navigation">
-      <div class="main-navigation-wrapper">
-        <form class="search-form" action="" method="GET">
-          <input class="search-field" type="search" name="search" id="search-search" placeholder="Поиск по сайту">
-          <button class="search-button" type="button">Найти</button>
-        </form>
 
-        <ul class="user-navigation">
-          <li><a href="#">Войти</a></li>
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
-        </ul>
+      <form class="search-form" action="" method="GET">
+        <!-- Добавить label и visual-hidden -->
+        <input class="search-field" type="search" name="search" id="search-search" placeholder="Поиск по сайту">
+        <button class="search-button" type="button">Найти</button>
+      </form>
 
-        <ul class="site-navigation">
-          <li>
-            <a href="#">Каталог товаров</a>
-            <ul class="site-navigation-catalog">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="catalog.html">Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадртокоптер</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+      <ul class="user-navigation">
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Сравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
 
-        <!-- <ul class="site-navigation">
+      <ul class="site-navigation">
+        <li>
+          <a href="#">Каталог товаров</a>
+          <ul class="site-navigation-catalog">
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадртокоптер</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
 
-        </ul> -->
-      </div>
+      <!-- <ul class="site-navigation">
+
+      </ul> -->
     </nav>
   </header>
 
@@ -91,7 +91,6 @@
             <p class="popular-product-slogan">Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a class="button" href="#">Подробнее</a>
-            <!-- <p>48 часов <span>без подзарядки</span></p> -->
             <table class="popular-product-feature">
               <tr>
                 <th>Без подзарядки</th>
@@ -199,16 +198,16 @@
 
       <ul class="products-manufactures-list">
         <li class="product-manufacture-item">
-          <a><img src="img/dji-company-logo.svg" width="260" height="100" alt="Логотип компании dji"></a>
+          <a><img src="img/dji-company-logo.png" width="260" height="100" alt="Логотип компании dji"></a>
         </li>
         <li class="product-manufacture-item">
-          <a><img src="img/sp-gadgets-logo.svg" width="260" height="100" alt="Логотип компании SP Gadgets"></a>
+          <a><img src="img/sp-gadgets-logo.png" width="260" height="100" alt="Логотип компании SP Gadgets"></a>
         </li>
         <li class="product-manufacture-item">
-          <a><img src="img/go-pro-company-logo.svg" width="260" height="100" alt="Логотип компании GoPro"></a>
+          <a><img src="img/go-pro-company-logo.png" width="260" height="100" alt="Логотип компании GoPro"></a>
         </li>
         <li class="product-manufacture-item">
-          <a><img src="img/vive-company-logo.svg" width="260" height="100" alt="Логотип компании Vive"></a>
+          <a><img src="img/vive-company-logo.png" width="260" height="100" alt="Логотип компании Vive"></a>
         </li>
       </ul>
     </section>
@@ -244,7 +243,6 @@
       </section>
     </div>
 
-
   </main>
 
   <footer class="main-footer">
@@ -274,7 +272,6 @@
     </div>
 
     <div class="footer-third-row">
-
       <div class="footer-social">
         <ul>
           <li>
@@ -288,11 +285,10 @@
           </li>
         </ul>
 
-        <a href="https://htmlacademy.ru" target="_blank">
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
           <img src="img/html-academy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
-
     </div>
 
   </footer>
